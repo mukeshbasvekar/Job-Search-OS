@@ -16,7 +16,7 @@ I spent multiple months job searching the right way: cold emails to founders, a 
 ### Why this works
 
 - **25–50 personalized cold emails/day** — AI does the tailoring, you do the sending
-- **Cold emails to founders convert significantly better** than cold applications through ATS
+- **Cold emails to founders convert 5–8× better** than cold applications (~5–8% vs ~1% interview rate)
 - **Tailored resume in under 10 minutes** — rebuilt from scratch for each JD
 - **8-phase interview prep** that predicts their questions before you walk in
 - **One profile file** (`YOUR_context.md`) — fill it in once, every prompt reads from it
