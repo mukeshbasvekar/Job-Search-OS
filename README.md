@@ -1,10 +1,30 @@
 # Job Search OS
 
-A complete, AI-powered job search system. Built from scratch over 3 months of active searching — then distilled into a reusable toolkit anyone can pick up.
+[![Stars](https://img.shields.io/github/stars/mukeshbasvekar/Job-Search-OS?style=flat-square)](https://github.com/mukeshbasvekar/Job-Search-OS/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
-This is not a template collection. It is a **system**: a CLI tool + AI prompts + LaTeX templates + operational frameworks that work together to run a high-output, personalized job search.
+> Most job searches fail not from lack of effort — but from lack of system.
 
-Mukesh Basvekar | https://www.linkedin.com/in/mukeshbasvekar/
+I spent 3 months job searching the right way: cold emails to founders, a tailored resume for every JD, deep interview prep from scratch each time. I built tooling to stop doing it manually. **It worked.** This is that system, open-sourced.
+
+**What this is:** a CLI (`jsos`) + AI prompts + LaTeX templates + Python scrapers that work together as a single, coherent job search engine.
+
+**What this is not:** a Notion template collection you'll open once and forget.
+
+---
+
+### Numbers from running it live
+
+- **25–50 personalized cold emails/day** — AI does the tailoring, you do the sending
+- **Cold emails to founders convert 2–3× better** than job board applications
+- **Tailored resume in under 10 minutes** — rebuilt from scratch for each JD
+- **8-phase interview prep** that predicts their questions before you walk in
+- **One profile file** (`YOUR_context.md`) — fill it in once, every prompt reads from it
+
+---
+
+Built by [Mukesh Basvekar](https://www.linkedin.com/in/mukeshbasvekar/) · If this saves you time, drop a ⭐ — it helps others find it.
+
 ---
 
 ## Install
