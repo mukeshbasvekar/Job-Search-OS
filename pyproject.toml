@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobsearchos"
+version = "1.0.0"
+description = "Job Search OS — a terminal-first job search system"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.1",
+    "requests>=2.28",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+jsos = "jsos.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["jsos*"]
+
+[tool.setuptools.package-data]
+jsos = ["templates/**/*", "templates/*"]

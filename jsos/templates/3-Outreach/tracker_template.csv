@@ -1,0 +1,2 @@
+company_name,stage,industry,work_type,location,company_size,contact_name,contact_title,contact_email,outreach_status,email_sent_date,reply_date,reply_type,meeting_booked_date,notes
+[Company Name],[e.g. Series A],[e.g. AI / SaaS],[e.g. Remote],[e.g. San Francisco CA],[e.g. 1-10],[First Name],[e.g. CEO],[email@company.com],[Not Started / Sent / Replied / Meeting Booked / No Response],[YYYY-MM-DD],[YYYY-MM-DD],[e.g. Positive / Referral / Rejection],[YYYY-MM-DD],[Any context]

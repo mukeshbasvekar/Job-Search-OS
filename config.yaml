@@ -1,0 +1,90 @@
+# ============================================================
+# Job Search OS — User Configuration
+# ============================================================
+# This file is the ONE place where YOUR preferences live.
+# Edit it once. The CLI reads it automatically.
+# ============================================================
+
+# Your name — used for file output naming and display
+name: "Your Name"
+
+# ─── Scoring: how companies are scored for fit ───────────────────────────────
+# Total score is out of 12. Edit these to match YOUR background.
+
+scoring:
+
+  # Minimum score to appear in the shortlist (0–12)
+  threshold: 6
+
+  # Max companies to include in the shortlist output
+  shortlist_limit: 80
+
+  # Industry alignment (0–3 points each)
+  # Set to 3 for industries you know well, 0 for ones you want to skip.
+  industry:
+    "AI": 3
+    "DevTools": 3
+    "Cybersecurity": 3
+    "Productivity": 2
+    "Analytics": 2
+    "HR & Recruiting": 2
+    "Healthcare": 2
+    "Education": 2
+    "Fintech": 1
+    "Consumer": 1
+    "Energy": 1
+    "Design": 1
+    "Logistics": 1
+    "Legal": 1
+    "Robotics": 1
+    "Marketing": 1
+    "Operations": 2
+    "Health & Wellness": 1
+
+  # Keywords in the company description that signal a strong fit (0–3 points, capped at 3)
+  # Replace with terms that match YOUR experience and target roles.
+  keywords:
+    - "agent"
+    - "agentic"
+    - "llm"
+    - "generative"
+    - "automation"
+    - "workflow"
+    - "enterprise"
+    - "b2b"
+    - "saas"
+    - "platform"
+    - "operations"
+    - "api"
+    - "infrastructure"
+    - "data"
+    - "intelligence"
+    - "insights"
+    - "decision"
+
+  # Work type preference (0–2 points)
+  work_type:
+    "Remote": 2
+    "Hybrid": 1
+    "Onsite": 0
+
+  # Company size preference (0–3 points)
+  # Adjust based on your target role size (e.g., set 1–10 = 3 for Founding PM roles)
+  company_size:
+    "1-10": 3
+    "1–10": 3
+    "11-50": 2
+    "11–50": 2
+    "51-200": 1
+    "51–200": 1
+
+  # Recency bonus: +1 point if funded within this many months
+  recency_months: 18
+
+# ─── Target roles ────────────────────────────────────────────────────────────
+# What roles are you targeting? Used for the "suggested_role" column in output.
+# First entry is preferred for tiny teams, second for small teams.
+target_roles:
+  founding: "Founding PM"       # For 1–10 person teams
+  early: "PM"                   # For 11–50 person teams
+  standard: "PM"                # For 51–200 person teams

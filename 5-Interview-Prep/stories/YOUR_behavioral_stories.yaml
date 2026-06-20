@@ -1,0 +1,85 @@
+# Your Behavioral Story Bank
+#
+# HOW TO USE:
+# 1. Write your rough stories in plain text
+# 2. Use story_prompt.md with Claude/GPT-4o to structure them into YAML format
+# 3. Add each story below
+# 4. The interview_prep_prompt.md will reference these stories by number
+#
+# AIM FOR: 8-12 stories covering all 6 behavioral buckets
+#
+# BUCKETS:
+# - Decision under uncertainty (highest weight — ~21% of behavioral questions)
+# - Influence without authority (~20%)
+# - Ownership / stepping up (~12%)
+# - Pressure / crisis (~8%)
+# - Conflict / difficult people (~8%)
+# - Failure & learning (~7%)
+#
+# FORMAT: Use story_prompt.md to generate each entry
+
+stories:
+
+  # -------------------------------------------------------------------------
+  # STORY 1 — [Give it a short name, e.g., "Scope Cut" or "Feature Launch"]
+  # -------------------------------------------------------------------------
+  - company: "[Company Name]"
+    feature: "[Feature or Project Name]"
+    scenario: "[One-line summary of what you owned end-to-end]"
+    questions:
+      - "[Question 1 from behavioral_questions.md this story answers]"
+      - "[Question 2 this story answers]"
+    skills: "[Skill 1, Skill 2, Skill 3]"
+    situation: |
+      [Context, the problem or opportunity, and why it mattered — 2-3 sentences]
+
+    action: |
+      - [Action verb] [what you did — show ownership and decision-making]
+      - [Action verb] [what you did]
+      - [Action verb] [what you did]
+      - [Action verb] [what you did]
+
+    result: |
+      [Specific, quantifiable outcomes. Every result should trace back to an action above.]
+
+  # -------------------------------------------------------------------------
+  # STORY 2 — [Short name]
+  # -------------------------------------------------------------------------
+  - company: ""
+    feature: ""
+    scenario: ""
+    questions:
+      - ""
+    skills: ""
+    situation: |
+
+    action: |
+
+    result: |
+
+  # -------------------------------------------------------------------------
+  # STORY 3 — [Short name]
+  # -------------------------------------------------------------------------
+  - company: ""
+    feature: ""
+    scenario: ""
+    questions:
+      - ""
+    skills: ""
+    situation: |
+
+    action: |
+
+    result: |
+
+  # -------------------------------------------------------------------------
+  # TMAY — Tell Me About Yourself (base version)
+  # -------------------------------------------------------------------------
+  tmay:
+    short: |
+      [60-second spoken version — who you are, your most relevant experience,
+       what you bring, and a bridge to "why this role." Rehearse out loud.]
+
+    full: |
+      [90-second version — same structure, more depth on your strongest proof points.
+       End with a forward bridge: "I'm looking for a role where I can..."]

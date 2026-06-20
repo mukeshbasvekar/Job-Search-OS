@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Local Claude settings
+.claude/settings.local.json
+
+# Personal profile & workspace data (user-specific, not part of the template)
+1-Profile/YOUR_context.md
+1-Profile/YOUR_resume_data_compact.md
+data/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log

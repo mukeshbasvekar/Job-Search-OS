@@ -1,0 +1,189 @@
+%----------------------------------------------------------------------------------------
+% RESUME TEMPLATE — MBA Executive Standard
+% Style: MBA Executive Standard | Font: Palatino (mathpazo)
+%
+% USAGE:
+%   \expEntry{Company}{Location}{Role}{Dates}{Description}  — full entry
+%   \expEntry{}{}{Second Role at Same Company}{Dates}{}     — skip company/location line
+%   \eduEntry{Institution}{Location}{Degree}{Dates}
+%   Compile with: tectonic resume_template.tex
+%
+% SETUP:
+%   Replace all [PLACEHOLDER] values below with your real info.
+%   In the header: your name, phone, email, LinkedIn, portfolio
+%   In the body: delete the example entries and fill in your own
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{ifthen}
+% Canonical: left=right, top=bottom (symmetric). Do not asymmetric bottom margin to fix blank footer band.
+\usepackage[left=0.55in, top=0.45in, right=0.55in, bottom=0.45in]{geometry}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+%----------------------------------------------------------------------------------------
+% PAGE SETUP
+%----------------------------------------------------------------------------------------
+
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+
+%----------------------------------------------------------------------------------------
+% SECTION HEADER: Bold Small Caps + thin rule
+%----------------------------------------------------------------------------------------
+
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\vspace{1pt}\color{black}\hrule height 0.5pt]
+
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+%----------------------------------------------------------------------------------------
+% BULLET CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\setlist[itemize]{
+  leftmargin = 1.5em,
+  itemsep    = 0pt,
+  parsep     = 0pt,
+  topsep     = 1pt,
+  label      = \textbullet
+}
+
+%----------------------------------------------------------------------------------------
+% ENTRY COMMANDS
+%
+% \expEntry{Company}{Location}{Role}{Dates}{Description}
+%   — If Company is empty, skips the company/location line (for second roles)
+%   — If Description is empty, skips the description line
+%----------------------------------------------------------------------------------------
+
+\newcommand{\expEntry}[5]{%
+  \vspace{2pt}%
+  \ifthenelse{\equal{#1}{}}{}{%
+    \textbf{#1} \hfill \textbf{#2} \\[1pt]%
+  }%
+  \textit{#3} \hfill \textit{#4}%
+  \ifthenelse{\equal{#5}{}}{}{%
+    \\[1pt]\small\textit{#5}%
+  }%
+  \vspace{0pt}%
+}
+
+\newcommand{\eduEntry}[4]{%
+  \vspace{2pt}%
+  \textbf{#1} \hfill \textbf{#2} \\[1pt]%
+  \textit{#3} \hfill \textit{#4}%
+  \vspace{0pt}%
+}
+
+%----------------------------------------------------------------------------------------
+% DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------HEADER----------
+% Replace with your real name, phone, email, LinkedIn URL, and portfolio URL.
+% ATS tip: Use plain hyphens in phone number, no parentheses. Use | separators.
+\begin{center}
+  {\huge\bfseries\MakeUppercase{[YOUR FULL NAME]}} \\[3pt]
+  \small
+  [PHONE NUMBER] \textbar{} \underline{\href{mailto:[YOUR EMAIL]}{\color{black}[YOUR EMAIL]}} \textbar{} \underline{\href{[LINKEDIN URL]}{\color{black}LinkedIn}} \textbar{} \underline{\href{[PORTFOLIO URL]}{\color{black}[PORTFOLIO DISPLAY TEXT]}}
+\end{center}
+\vspace{-2pt}
+
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+% 2 sentences: (1) Lead with impact metrics, (2) Include your degree + what you bring.
+% See prompt.md for rules and examples.
+%----------------------------------------------------------------------------------------
+
+\section{Professional Summary}
+\small
+[PASTE TAILORED PROFESSIONAL SUMMARY HERE --- Lead with business impact metrics; include your degree and background. Never lead with "I recently graduated."]
+
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL EXPERIENCE
+% Reverse chronological. Use --- (triple dash) for em-dash in role titles.
+% Use -- (double dash) for date ranges (Month YYYY -- Month YYYY).
+% For company websites/links: \expEntry{\underline{\href{URL}{\color{black}Company Name}}}{...}
+%----------------------------------------------------------------------------------------
+
+\section{Professional Experience}
+
+\expEntry{[Company A Name]}{[City, Country or Remote]}{[Role Title]}{[Month YYYY -- Month YYYY]}{[One-line description: what the company does, domain, scale.]}
+\begin{itemize}
+  \item \textbf{[Label]}: [Action verb] + [what you did] + [quantified result].
+  \item \textbf{[Label]}: [Action verb] + [what you did] + [quantified result].
+  \item \textbf{[Label]}: [Action verb] + [what you did] + [quantified result].
+\end{itemize}
+
+\expEntry{[Company B Name]}{[City, Country or Remote]}{[Role Title]}{[Month YYYY -- Month YYYY]}{[One-line description.]}
+\begin{itemize}
+  \item \textbf{[Label]}: [Action verb] + [what you did] + [quantified result].
+  \item \textbf{[Label]}: [Action verb] + [what you did] + [quantified result].
+\end{itemize}
+
+% EXAMPLE: Two roles at the same company (promoted)
+% \expEntry{[Company Name]}{[City, Country]}{[First Role]}{[Month YYYY -- Month YYYY]}{[One-line description.]}
+% \begin{itemize}
+%   \item \textbf{[Label]}: [bullet text].
+% \end{itemize}
+% \expEntry{}{}{[Second Role — Promotion]}{[Month YYYY -- Month YYYY]}{}
+% \begin{itemize}
+%   \item \textbf{[Label]}: [bullet text].
+% \end{itemize}
+
+%----------------------------------------------------------------------------------------
+% PRODUCTS & KEY INITIATIVES
+% Side projects, startups, capstones, open source — things you built outside a day job.
+%----------------------------------------------------------------------------------------
+
+\section{Products \& Key Initiatives}
+
+\expEntry{[Project / Venture Name]}{[Location or Remote]}{[Your Role]}{[Month YYYY -- Present]}{[One-line description: what it is, who it's for, why it matters.]}
+\begin{itemize}
+  \item \textbf{[Label]}: [Action verb] + [what you did] + [quantified result or traction].
+  \item \textbf{[Label]}: [Action verb] + [what you did] + [quantified result or traction].
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\eduEntry{[University Name]}{[City, Country]}{[Degree Name --- Track/Specialization if any]}{[Month YYYY]}
+\begin{itemize}
+  \item \textbf{[Award or Scholarship]}: [Details] $|$ [Extracurricular] $|$ [Other notable]
+  \item \textbf{Coursework}: [Relevant courses that match your target roles]
+\end{itemize}
+
+\eduEntry{[Undergraduate University]}{[City, Country]}{[Degree Name]}{[Month YYYY]}
+\begin{itemize}
+  \item \textbf{[Leadership / Award]}: [Details]
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% SKILLS & COMPETENCIES
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills \& Competencies}
+\begin{itemize}
+  \item \textbf{Product}: [Roadmap, sprint planning, PRDs, user research, A/B testing, prioritization]
+  \item \textbf{Technical}: [SQL, Python, REST APIs, etc. — only include what you can speak to]
+  \item \textbf{AI/ML}: [LLMs, agent orchestration, vector DBs, prompt engineering — if applicable]
+  \item \textbf{Analytics}: [Amplitude, Mixpanel, Google Analytics, Excel, SQL — what you've used]
+  \item \textbf{Tools}: [Jira, Figma, Notion, Confluence, Cursor, etc.]
+  \item \textbf{Languages}: [Fluent in English and [Language] — only include business-level languages]
+\end{itemize}
+
+\end{document}
