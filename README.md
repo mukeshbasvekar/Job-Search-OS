@@ -5,7 +5,7 @@
 
 > Most job searches fail not from lack of effort — but from lack of system.
 
-I spent 3 months job searching the right way: cold emails to founders, a tailored resume for every JD, deep interview prep from scratch each time. I built tooling to stop doing it manually. **It worked.** This is that system, open-sourced.
+I spent multiple months job searching the right way: cold emails to founders, a tailored resume for every JD, deep interview prep from scratch each time. I built tooling to stop doing it manually. **It worked.** This is that system, open-sourced.
 
 **What this is:** a CLI (`jsos`) + AI prompts + LaTeX templates + Python scrapers that work together as a single, coherent job search engine.
 
