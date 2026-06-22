@@ -28,6 +28,7 @@ Then open Claude Code inside your workspace and the commands are live.
 | `/interview-prep` | Reads your profile + story bank + a JD → generates 8-phase prep doc |
 | `/build-stories` | Reads your profile → builds a STAR story bank in YAML |
 | `/diagnose` | Asks 3 questions → identifies where your funnel is breaking and gives a protocol |
+| `/negotiate-offer` | Walks through the offer, the comp breakdown, and drafts your actual ask |
 
 ---
 
